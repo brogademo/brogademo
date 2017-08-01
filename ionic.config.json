@@ -1,5 +1,8 @@
 {
   "name": "brogademo",
-  "app_id": "",
-  "type": "ionic1"
+  "app_id": "f678c176",
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*"
+  ]
 }
