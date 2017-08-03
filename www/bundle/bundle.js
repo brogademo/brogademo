@@ -8,11 +8,11 @@
 
 var broga = angular.module('broga', ['ionic']).config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state('home', {
-        url: '/',
+        url: '',
         templateUrl: './views/home/homeTmpl.html',
         controller: 'homeCtrl'
     });
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('');
 }).run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
         if (window.cordova && window.cordova.plugins.Keyboard) {
