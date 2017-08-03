@@ -18,14 +18,19 @@
 </head>
 
 <body ng-app="broga">
-
+    <!--ion pane is what mobile users se  -->
     <ion-pane>
+        <!--header bar is the top nav bar I overwrite a ton of code from it in our scss file  -->
         <ion-header-bar class="bar-stable">
             <h1 class="title">Broga</h1>
         </ion-header-bar>
         <ion-content>
+            <!--ion nav view is ui-view from angular but for ionic  -->
             <ion-nav-view></ion-nav-view>
         </ion-content>
+        <div class="bar bar-footer">
+            <div class="title">Nav-bar</div>
+        </div>
     </ion-pane>
 </body>
 

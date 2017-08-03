@@ -10,3 +10,49 @@ ion-header-bar {
         text-align: center !important;
     }
 }
+
+#profile {
+    .profilePic {
+        float: left;
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background-color: black;
+        margin-left: 5%;
+        margin-right: 3%;
+        margin-top: 3%;
+    }
+    .name {
+        font-size: 1.5em;
+        color: #31436B;
+        margin-bottom: 0px;
+    }
+    .summary {
+        font-size: .8em;
+    }
+    .sports {
+        display: inline-block;
+        font-size: .5em;
+        height: 2vh;
+        border: 1px solid #EF9571;
+        background-color: #EF9571;
+        color: white;
+        border-radius: 1vh;
+        margin-left: 5%;
+        margin-bottom: 10%;
+    }
+    .goals {
+        margin-left: 5%;
+        h1 {
+            display: inline-block;
+            font-size: 1.5em;
+            border: 1px solid #EF9571;
+            color: #31436B;
+            border-radius: 1vh;
+        }
+        .goal {
+            font-size: 1em;
+        }
+    }
+}
