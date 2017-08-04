@@ -11,8 +11,19 @@ ion-header-bar {
     }
 }
 
+.bar-footer {
+    position: fixed;
+    img {
+        height: 40px;
+        width: 40px;
+        margin-left: 15%;
+        padding-bottom: 5px;
+    }
+}
+
 #profile {
-    .profilePic {
+    overflow-y: scroll;
+    .profilePic img {
         float: left;
         width: 100px;
         height: 100px;
@@ -33,17 +44,20 @@ ion-header-bar {
     }
     .sports {
         display: inline-block;
-        font-size: .5em;
-        height: 2vh;
-        border: 1px solid #EF9571;
+        text-align: center;
+        ;
+        font-size: .75em;
+        padding: 2px;
         background-color: #EF9571;
         color: white;
         border-radius: 1vh;
         margin-left: 5%;
-        margin-bottom: 10%;
+        margin-bottom: 7%;
     }
     .goals {
         margin-left: 5%;
+        float: left;
+        width: 45%;
         h1 {
             display: inline-block;
             font-size: 1.5em;
@@ -53,6 +67,60 @@ ion-header-bar {
         }
         .goal {
             font-size: 1em;
+        }
+    }
+    .badges {
+        float: left;
+        width: 45%;
+        border: 1px solid #EF9571;
+        border-radius: 3vh;
+        text-align: center;
+        margin-right: 5%;
+        h1 {
+            display: inline-block;
+            font-size: 1.5em;
+            color: #31436B;
+            border-radius: 1vh;
+        }
+        ul li img {
+            // position: absolute;
+            border-radius: 100px;
+            border-style: 10px solid #EF9571;
+            width: 75px;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            // width: 50%;
+            // height: 50%;
+            justify-content: center;
+            margin: 0;
+        }
+    }
+    .leaderboards {
+        list-style: none;
+        position: absolute;
+        bottom: 8%;
+        height: 25%;
+        width: 85%;
+        margin: 0% 5%;
+        border: 2px solid #EF9571;
+        border-radius: 14%;
+        text-align: center;
+        h1 {
+            font-size: 1.5em;
+            text-align: left;
+            margin-left: 3%;
+            margin-top: 2%;
+            margin-bottom: 0;
+            color: #31436B;
+        }
+        .you {
+            color: #31436B;
+        }
+        ul {
+            font-size: .8em;
         }
     }
 }
