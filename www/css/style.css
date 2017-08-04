@@ -7,43 +7,79 @@ ion-header-bar {
     background-color: white;
     text-align: center !important; }
 
-#profile .profilePic {
-  float: left;
-  width: 100px;
-  height: 100px;
-  border: 2px solid black;
-  border-radius: 50%;
-  background-color: black;
-  margin-left: 5%;
-  margin-right: 3%;
-  margin-top: 3%; }
-
-#profile .name {
-  font-size: 1.5em;
-  color: #31436B;
-  margin-bottom: 0px; }
-
-#profile .summary {
-  font-size: .8em; }
-
-#profile .sports {
-  display: inline-block;
-  font-size: .5em;
-  height: 2vh;
-  border: 1px solid #EF9571;
-  background-color: #EF9571;
-  color: white;
-  border-radius: 1vh;
-  margin-left: 5%;
-  margin-bottom: 10%; }
-
-#profile .goals {
-  margin-left: 5%; }
-  #profile .goals h1 {
-    display: inline-block;
+#profile {
+  overflow-y: scroll; }
+  #profile .profilePic img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-top: 3%; }
+  #profile .name {
     font-size: 1.5em;
-    border: 1px solid #EF9571;
     color: #31436B;
-    border-radius: 1vh; }
-  #profile .goals .goal {
-    font-size: 1em; }
+    margin-bottom: 0px; }
+  #profile .summary {
+    font-size: .8em; }
+  #profile .sports {
+    display: inline-block;
+    font-size: .5em;
+    height: 2vh;
+    border: 1px solid #EF9571;
+    background-color: #EF9571;
+    color: white;
+    border-radius: 1vh;
+    margin-left: 5%;
+    margin-bottom: 10%; }
+  #profile .goals {
+    margin-left: 5%;
+    float: left;
+    width: 45%; }
+    #profile .goals h1 {
+      display: inline-block;
+      font-size: 1.5em;
+      border: 1px solid #EF9571;
+      color: #31436B;
+      border-radius: 1vh; }
+    #profile .goals .goal {
+      font-size: 1em; }
+  #profile .badges {
+    float: left;
+    width: 45%;
+    border: 1px solid #EF9571;
+    border-radius: 3vh;
+    text-align: center;
+    margin-right: 5%; }
+    #profile .badges h1 {
+      display: inline-block;
+      font-size: 1.5em;
+      color: #31436B;
+      border-radius: 1vh; }
+    #profile .badges ul li img {
+      border-radius: 100px;
+      border-style: 10px solid #EF9571;
+      width: 75px; }
+    #profile .badges ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0; }
+  #profile .leaderboards {
+    list-style: none;
+    position: absolute;
+    bottom: 5%;
+    height: 25%;
+    width: 85%;
+    margin: 5% 5%;
+    border: 2px solid #EF9571;
+    border-radius: 14%;
+    text-align: center; }
+    #profile .leaderboards .you {
+      color: #31436B; }
+    #profile .leaderboards ul {
+      margin-top: 7%; }
