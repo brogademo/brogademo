@@ -11,6 +11,16 @@ ion-header-bar {
     }
 }
 
+.bar-footer {
+    position: fixed;
+    img {
+        height: 40px;
+        width: 40px;
+        margin-left: 15%;
+        padding-bottom: 5px;
+    }
+}
+
 #profile {
     overflow-y: scroll;
     .profilePic img {
@@ -34,14 +44,15 @@ ion-header-bar {
     }
     .sports {
         display: inline-block;
-        font-size: .5em;
-        height: 2vh;
-        border: 1px solid #EF9571;
+        text-align: center;
+        ;
+        font-size: .75em;
+        padding: 2px;
         background-color: #EF9571;
         color: white;
         border-radius: 1vh;
         margin-left: 5%;
-        margin-bottom: 10%;
+        margin-bottom: 7%;
     }
     .goals {
         margin-left: 5%;
@@ -90,8 +101,8 @@ ion-header-bar {
     .leaderboards {
         list-style: none;
         position: absolute;
-        bottom: 12%;
-        height: 20%;
+        bottom: 8%;
+        height: 25%;
         width: 85%;
         margin: 0% 5%;
         border: 2px solid #EF9571;
@@ -102,13 +113,13 @@ ion-header-bar {
             text-align: left;
             margin-left: 3%;
             margin-top: 2%;
+            margin-bottom: 0;
             color: #31436B;
         }
         .you {
             color: #31436B;
         }
         ul {
-            margin-top: 3%;
             font-size: .8em;
         }
     }
